@@ -74,7 +74,12 @@ public class ConsolePainter implements Runnable {
 
     @Override
     public void run() {
-        
+        console.printWelcome();
+        while(true){
+            console.print4input();
+            input = console.getInput();
+            identifyComand(input);
+        }
     }
 
 }
