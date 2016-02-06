@@ -17,6 +17,10 @@ public class Painter {
         drawSheet = ds;
     }
     
+    public Painter() {
+        System.out.println("Please create a sheet");
+    }
+    
     public void drawline(int x1, int y1, int x2, int y2) {
         
         if (y1 == y2) {
@@ -68,6 +72,10 @@ public class Painter {
         }
         drawSheet.repaint();
         
+    }
+
+    public void setDrawSheet(DrawSheet drawSheet) {
+        this.drawSheet = drawSheet;
     }
     
 }
