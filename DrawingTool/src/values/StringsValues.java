@@ -14,5 +14,5 @@ public class StringsValues {
     public final static String LINE = "L";
     public final static String RECTANGLE = "R";
     public final static String BUCKET = "B";
-    public final static String EXIT_COMMAND = "exit";
+    public final static String EXIT_COMMAND = "Q";
 }

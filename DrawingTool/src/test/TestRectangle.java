@@ -1,7 +1,6 @@
 package test;
 
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /*
@@ -14,7 +13,7 @@ import java.util.ArrayList;
  *
  * @author aldajo
  */
-public class TestRectangle2 {
+public class TestRectangle {
 
     public static void main(String[] args) {
         
@@ -43,14 +42,6 @@ public class TestRectangle2 {
                         
                         arrayFil = (ArrayList) arrayCol.get(i-1);
                         System.out.print(arrayFil.get(j-1));
-                        
-                        //System.out.print(" ");
-//                        if(i == 2 && j == 2){
-//                            System.out.print("o");
-//                        }else{
-//                            System.out.print(" ");
-//                        }
-                        //System.out.print(j-1);
                     }
                 }
             }

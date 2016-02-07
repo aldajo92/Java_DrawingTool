@@ -21,11 +21,10 @@ public class Painter {
         System.out.println("Please create a sheet");
     }
     
-    public void drawline(int x1, int y1, int x2, int y2) {
+    private void drawlineWhitoutRepaint(int x1, int y1, int x2, int y2) {
         
         if (y1 == y2) {
             //linea horizontal
-            System.out.println("linea horizontal");
             for (int i = 0; i <= (x2 - x1); i++) {
                 drawSheet.setPoint(x1 + i, y1, "x");
             }
@@ -39,15 +38,24 @@ public class Painter {
         } else {
             System.out.println("Impossible line!!");
         }
-        drawSheet.repaint();
         
     }
     
-    public void drawRect(int x1, int y1, int x2, int y2) {
-        drawline(x1, y1, x2 - 1, y1);
-        drawline(x1, y1 + 1, x1, y2);
-        drawline(x1 + 1, y2, x2, y2);
-        drawline(x2, y1, x2, y2 - 1);
+    public void drawline(int x1, int y1, int x2, int y2){
+        drawlineWhitoutRepaint(x1, y1, x2, y2);
+        drawSheet.repaint();
+    }
+    
+    private void drawRectWithoutRepaint(int x1, int y1, int x2, int y2) {
+        drawlineWhitoutRepaint(x1, y1, x2 - 1, y1);
+        drawlineWhitoutRepaint(x1, y1 + 1, x1, y2);
+        drawlineWhitoutRepaint(x1 + 1, y2, x2, y2);
+        drawlineWhitoutRepaint(x2, y1, x2, y2 - 1);
+    }
+    
+    public void drawRect(int x1, int y1, int x2, int y2){
+        drawRectWithoutRepaint(x1, y1, x2, y2);
+        drawSheet.repaint();
     }
     
     public void bucketfill(String value) {
@@ -55,6 +63,16 @@ public class Painter {
             for (int j = 0; j < drawSheet.getWeith(); j++) {
                 if (drawSheet.getPoint(j, i).equals(" ")) {
                     drawSheet.setPoint(j, i, value);
+                } else {
+                    break;
+                }
+            }
+        }
+        
+        for (int i = 0; i < drawSheet.getWeith(); i++) {
+            for (int j = 0; j < drawSheet.getHeight(); j++) {
+                if (!drawSheet.getPoint(i, j).equals("x")) {
+                    drawSheet.setPoint(i, j, value);
                 } else {
                     break;
                 }
@@ -70,6 +88,17 @@ public class Painter {
                 }
             }
         }
+        
+        for (int i = 0; i < drawSheet.getWeith(); i++) {
+            for (int j = 0; j < drawSheet.getHeight(); j++) {
+                if (!drawSheet.getPoint(drawSheet.getWeith()-i-1, drawSheet.getHeight()-j-1).equals("x")) {
+                    drawSheet.setPoint(drawSheet.getWeith()-i-1, drawSheet.getHeight()-j-1, value);
+                } else {
+                    break;
+                }
+            }
+        }
+        
         drawSheet.repaint();
         
     }

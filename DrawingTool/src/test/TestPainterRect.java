@@ -6,16 +6,17 @@
 package test;
 
 import graphics.DrawSheet;
+import graphics.Painter;
 
 /**
  *
  * @author aldajo
  */
-public class TestDrawSheet {
+public class TestPainterRect {
     public static void main(String[] args) {
-        DrawSheet ds = new DrawSheet(10, 10);
-        ds.setPoint(2, 4, "k");
-        ds.repaint();
-        
+        DrawSheet ds = new DrawSheet(15, 10);
+        Painter pn = new Painter(ds);
+        pn.drawRect(2, 1, 5, 5);
+        //pn.bucketfill("l");
     }
 }

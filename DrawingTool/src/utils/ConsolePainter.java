@@ -67,6 +67,8 @@ public class ConsolePainter implements Runnable {
                     System.out.println("Please create a sheet");
                 }
                 break;
+            case StringsValues.EXIT_COMMAND:
+                System.exit(0);
             default:
                 System.out.println("Print a correct command");
         }

@@ -11,13 +11,20 @@ import java.util.ArrayList;
  *
  * @author aldajo
  */
-public class TestArray {
+public class TestArrayAndReplaceChar {
     public static void main(String[] args) {
         
         ArrayList array = new ArrayList();
         array.add(0,"x");
-        array.set(0," ");
         array.add(1,"a");
+        
+        for (int i = 0; i < array.size(); i++) {
+            System.out.println(array.get(i));
+        }
+        
+        System.out.println("after replacement...");
+        
+        array.set(0," ");
         
         for (int i = 0; i < array.size(); i++) {
             System.out.println(array.get(i));

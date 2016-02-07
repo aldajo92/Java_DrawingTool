@@ -12,12 +12,12 @@ import graphics.Painter;
  *
  * @author aldajo
  */
-public class TestPainter {
+public class TestPainterLine {
     public static void main(String[] args) {
         DrawSheet ds = new DrawSheet(15, 10);
         Painter pn = new Painter(ds);
-        //pn.drawline(2, 3, 2, 6);
+        pn.drawline(2, 3, 2, 6);
         //pn.drawRect(2, 1, 5, 5);
-        pn.bucketfill("l");
+        //pn.bucketfill("l");
     }
 }
