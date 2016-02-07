@@ -3,10 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/aldajo/NetBeansProjects/DrawingTool/src/test/TestPainter.java</file>
-            <file>file:/home/aldajo/NetBeansProjects/DrawingTool/src/graphics/Painter.java</file>
-            <file>file:/home/aldajo/NetBeansProjects/DrawingTool/src/test/TestDrawSheet.java</file>
-            <file>file:/home/aldajo/NetBeansProjects/DrawingTool/src/graphics/DrawSheet.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/test/TestPainterLine.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/utils/ConsolePainter.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/values/StringsValues.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/test/TestDrawSheetPoint.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/test/TestArrayAndReplaceChar.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/test/TestRectangle.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/graphics/DrawSheet.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/main/Main.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/utils/Console.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/graphics/Painter.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/test/TestPainterRect.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/test/TestConsole.java</file>
+            <file>file:/home/aldajo/Java_DrawingTool/DrawingTool/src/test/TestPainterBucket.java</file>
         </group>
     </open-files>
 </project-private>

@@ -24,11 +24,16 @@ public class Console implements Runnable {
     }
 
     public void printWelcome() {
-        System.out.println("Enter some text, or '" + StringsValues.EXIT_COMMAND + "' to quit");
+        System.out.println("Enter 'H' for help, or '" + StringsValues.EXIT_COMMAND + "' to quit");
+    }
+    
+    public void printHelp() {
+        System.out.println(StringsValues.HELP_MESSAGE);
     }
 
     public void print4input() {
         try {
+            System.out.println(StringsValues.INPUT_MESSAGE);
             System.out.print("> ");
             input = br.readLine();
             if (input.length() == StringsValues.EXIT_COMMAND.length() && input.toLowerCase().equals(StringsValues.EXIT_COMMAND)) {

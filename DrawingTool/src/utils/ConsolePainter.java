@@ -46,7 +46,7 @@ public class ConsolePainter implements Runnable {
                             Integer.parseInt(parameters[3]),
                             Integer.parseInt(parameters[4]));
                 }else{
-                    System.out.println("Please create a sheet");
+                    System.err.println("Please create a sheet!!!");
                 }
                 break;
             case StringsValues.RECTANGLE:
@@ -57,18 +57,22 @@ public class ConsolePainter implements Runnable {
                             Integer.parseInt(parameters[3]),
                             Integer.parseInt(parameters[4]));
                 }else{
-                    System.out.println("Please create a sheet");
+                    System.err.println("Please create a sheet");
                 }
                 break;
             case StringsValues.BUCKET:
                 if(drawSheet != null){
                     painter.bucketfill(parameters[1]);
                 }else{
-                    System.out.println("Please create a sheet");
+                    System.err.println("Please create a sheet");
                 }
                 break;
             case StringsValues.EXIT_COMMAND:
                 System.exit(0);
+                break;
+            case StringsValues.HELP_COMMAND:
+                console.printHelp();
+                break;
             default:
                 System.out.println("Print a correct command");
         }

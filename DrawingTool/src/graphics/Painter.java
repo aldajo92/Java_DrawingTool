@@ -18,7 +18,7 @@ public class Painter {
     }
     
     public Painter() {
-        System.out.println("Please create a sheet");
+        System.err.println("Please create a sheet");
     }
     
     private void drawlineWhitoutRepaint(int x1, int y1, int x2, int y2) {
